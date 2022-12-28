@@ -127,12 +127,12 @@ body {
 
 .accordions ul li div a {
     display: block;
-    height: 50px;
+    height: 130px;
     width: 100%;
     position: relative;
     z-index: 3;
     vertical-align: bottom;
-    padding: 5px 70px;
+    padding: 35px 70px;
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
@@ -158,13 +158,25 @@ body {
 .accordions ul li div a h2 {
     font-family: 'Noto Sans KR', sans-serif;
     text-overflow: clip;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 30px;
     text-transform: capitalize;
-    margin-bottom: 2px;
-    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+    text-shadow: 3px 3px 4px rgba(0,0,0, 0.5);
     top: 5px;
     text-align: center;
+}
+
+.accordions ul li div a h2 .bt{
+    width: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    top: 11px;
+    filter: drop-shadow(3px 3px 4px rgba(0,0,0, 0.5));
+}
+
+.accordions ul li div a h2 .bt img{
+    width: 100%;
 }
 
 .accordions ul li div a p {
@@ -173,23 +185,23 @@ body {
 }
 
 .accordions ul li:nth-child(1) {
-    background-image: url('../img/slide001.png');
+    background-image: url('../img/slide001-1.png');
 }
 
 .accordions ul li:nth-child(2) {
-    background-image: url('../img/slide002.png');
+    background-image: url('../img/slide002-1.png');
 }
 
 .accordions ul li:nth-child(3) {
-    background-image: url('../img/slide003.png');
+    background-image: url('../img/slide003-1.png');
 }
 
 .accordions ul li:nth-child(4) {
-    background-image: url('../img/slide004.png');
+    background-image: url('../img/slide004-1.png');
 }
 
 .accordions ul li:nth-child(5) {
-    background-image: url('../img/slide005.png');
+    background-image: url('../img/slide005-1.png');
 }
 
 .accordions ul:hover li,
