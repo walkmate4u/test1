@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*margin padding 초기 설정*/
+ul,
+ol {
+    list-style: none;
+}
+
+/*UL OL 불릿 없애기 초기 설정*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*a태그 글자색 검정, 밑줄 없애기 */
+
+body {
+    font-family: "나눔고딕", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+
+/** body 설정 끝**/
+/** Header 설정 시작**/
+
+/*폰트, 기본 설정 가져가기*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/**********************************************/
+/* 메인 로고 설정*/
+/**********************************************/
+#main_biglogo {
+    width: 100%;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+#main_biglogo img {
+    width: 100%;
+}
+
+#main_biglogo .text {
+    position: absolute;
+    top: 17vw;
+    right: 15%;
+    font-size: 1.7vw;
+    color: #555555;
+    line-height: 45px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#main_biglogo .text p {
+    text-align: center;
+}
+
+#main_biglogo .text a {
+    display: inline-block;
+    margin: 25px 0 50px;
+    padding: 5px 30px;
+    border: 1px solid #555555;
+    color: #555555;
+    font-size: 1.2vw;
+}
+
+#main_biglogo .text .logo_back {
+    text-align: center;
+    vertical-align: middle;
+    opacity: 70%;
+}
+
+#main_biglogo .text .logo_back img {
+    width: 80%;
+}
+
+/**********************************************/
+/* 아코디언 슬라이드 설정*/
+/**********************************************/
+
+.accordions {
+    width: 100%;
+    max-width: 1920px;
+    height: 679px;
+    overflow: hidden;
+    margin: 50px auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.accordions ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordions ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 679px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 1000ms ease;
+    -moz-box-shadow: -5px 0px 5px rgba(1, 1, 1, 0.3);
+    -webkit-box-shadow: -5px 0px 5px rgba(1, 1, 1, 0.3);
+    box-shadow: -5px 0px 5px rgba(1, 1, 1, 0.3);
+}
+
+.accordions ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordions ul li div a {
+    display: block;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 5px 70px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: all 2000ms ease;
+}
+
+.accordions ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 2000ms ease;
+    transition: all 2000ms ease;
+}
+
+.accordions ul li div a h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-overflow: clip;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+    top: 5px;
+    text-align: center;
+}
+
+.accordions ul li div a p {
+    top: 50px;
+    font-size: 13.5px;
+}
+
+.accordions ul li:nth-child(1) {
+    background-image: url('../img/slide001.png');
+}
+
+.accordions ul li:nth-child(2) {
+    background-image: url('../img/slide002.png');
+}
+
+.accordions ul li:nth-child(3) {
+    background-image: url('../img/slide003.png');
+}
+
+.accordions ul li:nth-child(4) {
+    background-image: url('../img/slide004.png');
+}
+
+.accordions ul li:nth-child(5) {
+    background-image: url('../img/slide005.png');
+}
+
+.accordions ul:hover li,
+.accordion ul:focus-within li {
+    width: 8%;
+}
+
+.accordions ul li:focus {
+    outline: none;
+}
+
+.accordions ul:hover li:hover,
+.accordions ul li:focus,
+.accordions ul:focus-within li:focus {
+    width: 60%;
+}
+
+.accordions ul:hover li:hover a,
+.accordions ul li:focus a,
+.accordions ul:focus-within li:focus a {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.accordions ul:hover li:hover a *,
+.accordions ul li:focus a *,
+.accordions ul:focus-within li:focus a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.accordions ul:hover li {
+    width: 8% !important;
+}
+
+.accordions ul:hover li a * {
+    opacity: 0 !important;
+}
+
+.accordions ul:hover li:hover {
+    width: 60% !important;
+}
+
+.accordions ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.accordions ul:hover li:hover a * {
+    opacity: 1 !important;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+/**********************************************/
+/* 놀이재활 설정*/
+/**********************************************/
+
+#walkmate_wrap {
+    width: 100%;
+    height: 1200px;
+    background-image: url(../img/walkmate_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.walkmate_play {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 17vw;
+}
+
+.walkmate_play .title {
+    padding: 20px 0 90px;
+}
+
+.walkmate_play .title p {
+    font-size: 30px;
+    color: #333333;
+    line-height: 39px;
+    padding: 20px 0;
+}
+
+.walkmate_play .title p span {
+    font-weight: 900;
+}
+
+.walkmate_play ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.walkmate_play ul li {
+    width: 23%;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+    background-image: url(../img/card_bg.png);
+    background-repeat: no-repeat;
+    background-position: 92% 95%;
+    background-size: 15%;
+}
+
+.walkmate_play ul li p {
+    padding: 10px 30px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #707070;
+}
+
+.walkmate_play ul li a {
+    display: block;
+}
+
+.walkmate_play ul li img {
+    width: 100%;
+}
+
+.walkmate_play ul li:hover {
+    transform: translateX(-5px) translateY(-5px);
+    transition: all 500ms ease;
+}
