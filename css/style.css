@@ -326,3 +326,93 @@ body {
     transform: translateX(-5px) translateY(-5px);
     transition: all 500ms ease;
 }
+
+/**********************************************/
+/* 유튜브 설정*/
+/**********************************************/
+
+.youtube{
+    width: 100%;
+}
+
+.youtube img{
+    width: 100%;
+}
+
+
+
+/**********************************************/
+/* 전국 설치 현황 설정*/
+/**********************************************/
+
+#buildup_list_wrap{
+    width: 100%;
+    background-image: url(../img/buildup_bg2-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+
+.buildup_list{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list_title{
+    padding: 0 0;
+    text-align: center;
+}
+
+.list_title img{
+    width: 65%;
+}
+
+.buildup_list .nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+.buildup_list .nav li:nth-child(1){
+    border-bottom: #e4ab0d 4px solid;
+    line-height: 20px;
+    padding: 15px 0;
+}
+
+.buildup_list .nav li:nth-child(2){
+    border: #ffffff 1px solid;
+}
+
+.buildup_list .nav li:nth-child(2) a{
+    color: #fff;
+    display: block;
+    padding: 15px 30px;
+}
+
+.buildup_list .list{
+    display: flex;
+}
+
+.buildup_list .list li a{
+   display: block;
+   width: 100%;
+    
+}
+
+.buildup_list .section1 li a img{
+    width: 100%;
+}
+
+.buildup_list .section1{
+    padding: 40px 0 80px;
+}
+
+
+.buildup_list .first{
+    justify-content: center;
+}
+
+.buildup_list .second{
+    justify-content: center;
+}
